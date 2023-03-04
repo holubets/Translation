@@ -1,5 +1,5 @@
 String localization() {
-  return "1.01.ua";
+  return "1.02.ua";
 }
 
 String getTextDayOfWeek(byte day) {
@@ -128,12 +128,28 @@ String Translate(String Text) {
   if (Text == "Standalone") return "Автономний";	  
   if (Text == "Slave") return "Раб";	  
   
+  // Room Namings
   if (Text == "Outdoor") return "Вулиця";	  
   if (Text == "Workshop") return "Майстерня";	  
   if (Text == "Searchlight") return "Прожектор";	  
   if (Text == "Yard") return "Подвір'я";	  
   if (Text == "Driveway") return "Заїзд";	  
   if (Text == "Garage") return "Гараж";	   
+  
+  if (Text == "Indoor") return "Приміщення";
+  if (Text == "Corridor") return "Коридор";
+  if (Text == "Kitchen") return "Кухня";
+  if (Text == "Balcony") return "Балкон";
+  if (Text == "Open Balcony") return "Відкритий Балкон";
+  if (Text == "Cabinet") return "Кабінет";
+  if (Text == "Bedroom") return "Спальня";
+  if (Text == "Children Room") return "Дитяча кімната";
+  if (Text == "Bathroom") return "Ванна";
+  if (Text == "Toilet") return "Туалет";
+  
+  if (Text == "Fan") return "Вентилятор";
+  if (Text == "Lamp") return "Лампа";
+  if (Text == "Mirror") return "Дзеркало";
 
   return Text; // "Translation Error!";
 }
