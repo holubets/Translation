@@ -1,5 +1,5 @@
 String localization() {
-  return "1.02.ua";
+  return "1.03.ua";
 }
 
 String getTextDayOfWeek(byte day) {
@@ -88,22 +88,43 @@ String Translate(String Text) {
   if (Text == "System configuration") return "Системна конфігурація";
   if (Text == "Cycles per 10 sec") return "Кількість циклів за 10 сек";
   
+  if (Text == "Clock") return "Годинник";
   if (Text == "System time") return "Системний час";
   if (Text == "System started at") return "Система запущена о";
   if (Text == "Last syncronisation done ") return "Остання синхронізація здійснена ";
   if (Text == "ago") return "тому";
+  if (Text == "Time") return "Час";
+  if (Text == "Date") return "Дата";
   if (Text == "Time Zone") return "Часовий пояс";
   if (Text == "DST") return "Літній час";
 
-  if (Text == "Daylight Sensor") return "Сенсор освітлення";
+  if (Text == "Sensors Configuration") return "Налаштування датчиків";
+  
+  // Daylight Sensor
+  if (Text == "Daylight Sensor") return "Датчик Освітлення";
   if (Text == "Activated") return "Активовано";
   if (Text == "Deactivated") return "Деактивовано";
   if (Text == "Working time") return "Робочий час";
   if (Text == "Current value") return "Поточний рівень освітлення";
   if (Text == "Transition value") return "Межа переключення";
   if (Text == "Relay Auto") return "Автоматичні виходи";
+  if (Text == "Daylight Outputs") return "Виходи що працюють по датчику освітлення";
+  if (Text == "Night Time Counter") return "Лічильник спрацювань";
   if (Text == "Day - Not Trigered") return "День - Виключений";
   if (Text == "Night - Trigered") return "Ніч - Включений";
+  if (Text == "Set current value as transition value") return "Встановити поточне значення для межі переключення";
+  if (Text == "To change the transition value use the next command") return "Використайте наступну команду для зміни межі переключення";
+  
+  // DHT Sensor
+  if (Text == "DHT Sensor") return "Датчик DHT";
+  if (Text == "Type") return "Тип";
+  if (Text == "Temperature") return "Температура";
+  if (Text == "Humidity") return "Вологість";
+  if (Text == "Group") return "Група";
+  if (Text == "To change DHT Group, type the next address") return "Використайте наступну команду для зміни групи датчика DHT";
+  if (Text == "To deactivate DHT Sensor press") return "Для деактивації датчика DHT натисніть";
+  if (Text == "here") return "тут";
+  if (Text == "Changing DHT Sensor configuration requires system restart to take affect.") return "Після зміни типу датчика DHT необхідно перезавантажити систему";
 
   if (Text == "Error") return "Помилка";
   if (Text == "error") return "помилка";
@@ -113,10 +134,11 @@ String Translate(String Text) {
   if (Text == "Status") return "Стан";
   if (Text == "Connected") return "Підключено";
   if (Text == "Disconnected") return "Відключено";
+  
+  if (Text == "Note") return "Примітка";
 
   // Configuration page
   if (Text == "CONFIGURATION") return "НАЛАШТУВАННЯ";
-  if (Text == "Daylight Sensor") return "Датчик освітлення";
   if (Text == "Termometers") return "Термометри";
   if (Text == "Weather forecast") return "Прогноз погоди";
   if (Text == "City identity") return "Ідентифікатор міста";
@@ -151,5 +173,5 @@ String Translate(String Text) {
   if (Text == "Lamp") return "Лампа";
   if (Text == "Mirror") return "Дзеркало";
 
-  return Text; // "Translation Error!";
+  return Text;  // No translation found, returning original text
 }
